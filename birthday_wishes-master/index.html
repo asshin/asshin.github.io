@@ -135,10 +135,48 @@
             height: 60px;
             overflow: hidden;
             border-radius: 50%;
+            animation: music 10s;     /* 旋转一圈所用时间 */
+            -webkit-animation: music 11s linear infinite;
+            /*background: url(https://n.sinaimg.cn/sinakd20117/119/w1284h1235/20210723/895b-36cc66c8c10b46e87ba9f389a82c8501.jpg) no-repeat;!* 网络图片引用 *!*/
+            background: url("./img/di24.gif");/* 网络图片引用 */
+            background-size: cover;
+            z-index: 999;
+        }
+        .qq1{
+            position: absolute;
+            left: 48%;
+            top:0;
+            margin-top:  720px;
+            font-size: 40px;
+            border: 1px dashed gray;
+            background-color: #fff;
+            width: 60px;/* 小圆圈尺寸 */
+            height: 60px;
+            overflow: hidden;
+            border-radius: 50%;
+            animation: music 10s;     /* 旋转一圈所用时间 */
+            -webkit-animation: music 12s linear infinite;
+            /*background: url(https://n.sinaimg.cn/sinakd20117/119/w1284h1235/20210723/895b-36cc66c8c10b46e87ba9f389a82c8501.jpg) no-repeat;!* 网络图片引用 *!*/
+            background: url("./img/wang.gif") ;/* 网络图片引用 */
+            background-size: cover;
+            z-index: 999;
+        }
+        .qq2{
+            position: absolute;
+            left: 48%;
+            top:0;
+            margin-top:  720px;
+            font-size: 40px;
+            border: 1px dashed gray;
+            background-color: #fff;
+            width: 60px;/* 小圆圈尺寸 */
+            height: 60px;
+            overflow: hidden;
+            border-radius: 50%;
             animation: music 15s;     /* 旋转一圈所用时间 */
             -webkit-animation: music 15s linear infinite;
             /*background: url(https://n.sinaimg.cn/sinakd20117/119/w1284h1235/20210723/895b-36cc66c8c10b46e87ba9f389a82c8501.jpg) no-repeat;!* 网络图片引用 *!*/
-            background: url("./img/di24.gif") no-repeat;/* 网络图片引用 */
+            background: url("./img/di24.gif") ;/* 网络图片引用 */
             background-size: cover;
             z-index: 999;
         }
@@ -176,11 +214,18 @@
 <i>距离阿君生日2022.4.2倒计时</i>
 <div id="timer" class="time-box"></div>
 <strong>Happy birthday To You!!!</strong>
+
+<div class="qq"></div>
+<div class="qq1"></div>
 <!--<span>你藏在满天星光里<br/>承认我也为你着迷 </span>-->
 <span><p><a href="./index2.html">点击进入</a> </span>
-<div class="qq"></div>
+<!--<div class="qq"></div>-->
+<!--<div class="qq1"></div>-->
+
 <div class="music-box2">
-    <iframe src="https://music.163.com/outchain/player?type=2&id=566436186&auto=1&height=66" frameborder="0"></iframe>
+<!--    <iframe src="https://music.163.com/outchain/player?type=2&id=566436186&auto=1&height=66" frameborder="0"></iframe>-->
+<!--    <iframe src="https://music.163.com/#/song?id=4875084" frameborder="0"></iframe>-->
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=4875084&auto=1&height=66"></iframe>
     </div>
 
 </body>
