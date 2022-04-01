@@ -6,25 +6,110 @@
   <title>Happy Birthday</title>
   <link rel="stylesheet" href="../css/jquery.fullPage.css">
   <link rel="stylesheet" href="../css/style.css">
+  <script>
+    function autoPlay(){
+    var myAuto = document.getElementById('myaudio');
+    myAuto.play();
+  }</script>
+
+  <style type="text/css">
+
+
+    /* button
+    ---------------------------------------------- */
+    .button {
+      display: inline-block;
+      zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+      *display: inline;
+      vertical-align: baseline;
+      margin: 0 2px;
+      outline: none;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      font: 14px/100% Arial, Helvetica, sans-serif;
+      padding: .5em 2em .55em;
+      text-shadow: 0 1px 1px rgba(0,0,0,.3);
+      -webkit-border-radius: .5em;
+      -moz-border-radius: .5em;
+      border-radius: .5em;
+      -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+      -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+      box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    }
+    .button:hover {
+      text-decoration: none;
+    }
+    .button:active {
+      position: relative;
+      top: 1px;
+    }
+
+    .bigrounded {
+      -webkit-border-radius: 2em;
+      -moz-border-radius: 2em;
+      border-radius: 2em;
+    }
+    .medium {
+      font-size: 12px;
+      padding: .4em 1.5em .42em;
+    }
+    .small {
+      font-size: 11px;
+      padding: .2em 1em .275em;
+    }
+
+    /* color styles
+    ---------------------------------------------- */
+
+
+    /* pink */
+    .pink {
+      color: #feeef5;
+      border: solid 1px #d2729e;
+      background: #f895c2;
+      background: -webkit-gradient(linear, left top, left bottom, from(#feb1d3), to(#f171ab));
+      background: -moz-linear-gradient(top,  #feb1d3,  #f171ab);
+      filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#feb1d3', endColorstr='#f171ab');
+    }
+    .pink:hover {
+      background: #d57ea5;
+      background: -webkit-gradient(linear, left top, left bottom, from(#f4aacb), to(#e86ca4));
+      background: -moz-linear-gradient(top,  #f4aacb,  #e86ca4);
+      filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4aacb', endColorstr='#e86ca4');
+    }
+    .pink:active {
+      color: #f3c3d9;
+      background: -webkit-gradient(linear, left top, left bottom, from(#f171ab), to(#feb1d3));
+      background: -moz-linear-gradient(top,  #f171ab,  #feb1d3);
+      filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f171ab', endColorstr='#feb1d3');
+    }
+
+  </style>
+
 </head>
 
 <body>
   <div class="bgcolor">
+
     <div style="z-index:100;" id="dowebok">
       <!--第一屏-->
+
       <div class="section">
         <div class="ly-box01">
           <div class="ly-txt01">
-            <p class="ly-stxt01">老婆，不知不觉一年又过去了</p>
-            <p class="ly-stxt02">距离咱俩百年还有70多年</p>
-            <p class="ly-stxt03">希望我们在这往后的70多年里</p>
-            <p class="ly-stxt04">一年比一年快乐</p>
+
+            <p class="ly-stxt01"><input class="button pink" type="button" onclick="autoPlay()" value="播放"/></p>
+            <p class="ly-stxt02">老婆，不知不觉一年又过去了</p>
+            <p class="ly-stxt03">距离咱俩百年还有70多年</p>
+            <p class="ly-stxt04">希望我们在这往后的70多年里，一年比一年快乐</p>
             <!-- ，在认清 -->
-            <p class="ly-stxt05">我不是在最好的时光</p>
+<!--            <p class="ly-stxt06">我不是在最好的时光</p>-->
             <!-- <p class="ly-stxt05">生活的真相后，更加热爱它吧！</p> -->
           </div>
           <div class="ly-txt02">
-            <p class="ly-stxt07">遇见了你，而是遇见了你</p>
+            <p class="ly-stxt06">我不是在最好的时光</p>
+            <p class="ly-stxt07">而是遇见了你</p>
             <p class="ly-stxt08">才开始了我这段最好的时光。</p>
             <p class="ly-stxt09">承蒙时光不弃，感谢相遇。</p>
             <p class="ly-stxt10">往下拉哦！</p>
@@ -223,11 +308,17 @@
     </ul> -->
 
   </div>
-  <audio src="../music/1.mp3" autoplay="autoplay" loop="loop">
+<!--  <audio src="../music/1.mp3" autoplay="autoplay" loop="loop">-->
+<!--  <audio src="//music.163.com/outchain/player?type=2&id=4875084&auto=1&height=66" autoplay="autoplay" loop="loop">-->
+    <audio id="myaudio" src="../music/1.mp3" autoplay="autoplay" loop="loop" >
+    </audio>
 
+
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=4875084&auto=1&height=66"></iframe>
     <script src="../js/jquery-1.8.3.min.js"></script>
     <script src="../js/jquery.fullPage.min.js"></script>
     <script src="../js/diy.js"></script>
+
 </body>
 
 </html>
